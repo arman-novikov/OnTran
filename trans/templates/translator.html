@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>	
+</head>
+
+<body>
+<header>
+  <div class="container">
+	  <a href="index.html" class="logo">ЛОГО</a> 
+ <nav>
+<ul class="menu">
+     <li><a href="/about"><span class="link">О нас</span></a></li>
+     <li><a href=""><span class="link">Переводчик</span></a></li>
+     <li><a href="/twork"><span class="link">Работа с текстом</span></a></li>
+     <li><a href="/contacts"><span class="link">Контакты</span></a></li>
+     <li><a href="/reglog"><span class="link">Вход/Регистрация</span></a></li>    
+</ul>
+</nav> 
+</div>  
+</header>
+
+<div class="main">
+	<div class="container">
+	<div class="engform"> 
+		<div class="title"> 
+				<h2>Английский</h2>
+			</div>
+  		 <form method="post" action="/tran"> {% csrf_token %} 
+	     <div>
+	         <label for="Englishtext">Текст</label>
+             <textarea rows="10" cols="45" name="fortransl">{{ given }}</textarea>
+         </div> 
+           <button type="submit">Перевести</button>
+	    </form>	
+     </div>
+   
+   <div class="rusform"> 
+		 <div class="title"> 
+				<h2>Русский</h2>
+			</div>
+		<form> 
+	     <div>
+	         <label for="Rustext">Перевод</label>
+             <textarea rows="10" cols="45" name="message">{{ translated }}</textarea>
+         </div> 
+    
+	</form>	
+    </div>
+	</div>
+</div>
+
+<footer>
+	<small>   Copyright Irina Pronina&Novikov Arman @2017</small>	
+</footer>
+</body>
+</html>

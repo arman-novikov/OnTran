@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>	
+</head>
+
+<body>
+<header>
+  <div class="container">ЛОГО </div>
+ <nav>
+<ul class="menu">
+     <li><a href="#"><span class="link">Главная</span></a></li>
+     <li><a href="#"><span class="link">Переводчик</span></a></li>
+     <li><a href="#"><span class="link">Контакты</span></a></li>
+     <li><a href="registr.html"><span class="link">Вход/Регистрация</span></a></li>   
+</ul>
+</nav> 
+  
+</header>
+
+
+<div class="main"><div class="container"></div>
+
+    <div class="form-wrap">
+      <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+    <h1>Регистрация</h1>
+  </div>
+    <form method="post" action="/register/"> {% csrf_token %}
+    <!--
+    <div>
+      <label for="name">Имя</label>
+      <input type="text" required name="name" required>
+    </div>
+    <div>
+      <label for="password">Пароль</label>
+      <input type="text" required name="name" required>
+    </div>
+        <div>
+      <label for="email">E-mail</label>
+      <input type="email" required name="email" required>
+    </div>
+    <div>
+      <div class="select-arrow"></div> 
+    </div>
+    -->
+    {{ form.as_table }}
+
+    <button type="submit">Отправить</button> 
+
+  </form> 
+</div>
+
+
+<div class="enterence">
+  <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+    <h1>Вход</h1>
+  </div>
+  <form method="post" action="/here is to be a login function/">
+    <div>
+      <label for="name">Имя</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="password">Пароль</label>
+      <input type="text" name="name" required>
+    </div>
+    
+            <button type="submit">Войти</button> 
+  </form> 
+  </div>
+
+ 
+</div>
+
+
+</body>
+
+<footer>
+	<small>   Copyright Irina Pronina&Novikov Arman @2017</small>	
+</footer>
+
+
+
+</html>

@@ -1,0 +1,12 @@
+=
+%tool%
+*инструмент*
+^1^
++for craftman's work+
+
+=
+%trees%
+*деревья*
+^1^
++may refer to different things+
+

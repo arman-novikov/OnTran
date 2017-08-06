@@ -1,0 +1,15 @@
+=
+%winter%
+*зима*
+^1^
++winter is a cold season of year+
+
+
+=
+%winters%
+*зимы*
+^1^
++winters are cold seasons of year+
+
+
+

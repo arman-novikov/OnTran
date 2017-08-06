@@ -1,0 +1,92 @@
+# depslib dependency file v1.0
+1494922001 source:/home/arman/KRPR/OnTran/main.cpp
+	"cppserv.h"
+	"test.h"
+
+1494492855 /home/arman/KRPR/OnTran/word.h
+	"funcs.h"
+
+1494494162 source:/home/arman/KRPR/OnTran/word.cpp
+	"word.h"
+
+1495105665 source:/home/arman/KRPR/OnTran/dict.cpp
+	"dict.h"
+	<cstring>
+
+1494454077 /home/arman/KRPR/OnTran/dict.h
+	"word.h"
+
+1495103715 /home/arman/KRPR/OnTran/funcs.h
+	"iostream"
+	"fstream"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1494640361 source:/home/arman/KRPR/OnTran/funcs.cpp
+	"funcs.h"
+
+1494008042 source:/home/arman/educ/KRPR/OnTran_7.05-1/dict.cpp
+	"dict.h"
+	<cstring>
+
+1493216260 /home/arman/educ/KRPR/OnTran_7.05-1/dict.h
+	"word.h"
+
+1494006210 /home/arman/educ/KRPR/OnTran_7.05-1/word.h
+	"funcs.h"
+
+1493843446 /home/arman/educ/KRPR/OnTran_7.05-1/funcs.h
+	"iostream"
+	"fstream"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+
+1494058172 source:/home/arman/educ/KRPR/OnTran_7.05-1/funcs.cpp
+	"funcs.h"
+
+1494006232 source:/home/arman/educ/KRPR/OnTran_7.05-1/word.cpp
+	"word.h"
+
+1494350875 source:/home/arman/KRPR/OnTran_7.05-1/dict.cpp
+	"dict.h"
+	<cstring>
+
+1493216260 /home/arman/KRPR/OnTran_7.05-1/dict.h
+	"word.h"
+
+1494006210 /home/arman/KRPR/OnTran_7.05-1/word.h
+	"funcs.h"
+
+1494350718 /home/arman/KRPR/OnTran_7.05-1/funcs.h
+	"iostream"
+	"fstream"
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+
+1494350718 source:/home/arman/KRPR/OnTran_7.05-1/funcs.cpp
+	"funcs.h"
+
+1494348296 source:/home/arman/KRPR/OnTran_7.05-1/main.cpp
+	"dict.h"
+
+1494006232 source:/home/arman/KRPR/OnTran_7.05-1/word.cpp
+	"word.h"
+
+1495102655 source:/home/arman/KRPR/OnTran/cppserv.cpp
+	"cppserv.h"
+
+1494875688 /home/arman/KRPR/OnTran/cppserv.h
+	"dict.h"
+
+1494875688 source:/home/arman/KRPR/OnTran/test.cpp
+	"test.h"
+
+1494875688 /home/arman/KRPR/OnTran/test.h
+	"cppserv.h"
+	<thread>
+

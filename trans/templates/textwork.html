@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>		
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+	  <a href="index.html" class="logo">ЛОГО</a> 
+ <nav>
+<ul class="menu">
+     <li><a href="/about"><span class="link">О нас</span></a></li>
+     <li><a href="/"><span class="link">Переводчик</span></a></li>
+     <li><a href="/twork"><span class="link">Работа с текстом</span></a></li>
+     <li><a href="/contacts"><span class="link">Контакты</span></a></li>
+     <li><a href="/reglog"><span class="link">Вход/Регистрация</span></a></li> 
+</ul>
+</nav> 
+</div>  
+</header>
+
+<div class="main">
+	<form method="post" action="/tworking"> {% csrf_token %}
+		<div class="container">
+			<div class="twork">
+				<div class="title">
+					<h2>Введите текст:</h2>
+				</div>
+					<div>
+						<textarea name="twork" id="twork" required>{{ text }}</textarea>
+					</div>
+			</div>
+		
+			<div class="word">
+				<div class="title">
+					<h2>Введите слово:</h2>
+				</div>
+					<textarea name="word" id="word">{{ word }}</textarea>
+					<button type="submit">Получить описание</button>
+					<textarea name="descr" id="descr">{{ descr }}</textarea>
+		</form>
+
+		</div>   						
+	</div>
+</div>
+
+
+<footer>
+	<small>   Copyright Irina Pronina & Novikov Arman @2017</small>	
+</footer>
+
+</body>
+</html>
+

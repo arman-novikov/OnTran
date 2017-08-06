@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>  
+</head>
+
+
+<body>
+<header>
+  <div class="container">
+	  <a href="index.html" class="logo">ЛОГО</a> 
+ <nav>
+<ul class="menu">
+     <li><a href="/about"><span class="link">О нас</span></a></li>
+     <li><a href="/"><span class="link">Переводчик</span></a></li>
+     <li><a href="/twork"><span class="link">Работа с текстом</span></a></li>
+     <li><a href="/contacts"><span class="link">Контакты</span></a></li>
+     <li><a href="/logout"><span class="link">Выйти</span></a></li>    
+</ul>
+</nav> 
+</div>  
+</header>
+
+<div class="main">
+<div class="container">
+<h2>Привет, {{ username }}</h2>
+		<div class="bigform"> 
+			<div class="title"> 
+				<h2>Добавление новых слов</h2>
+			</div>
+	<form method="post" action="/process"> {% csrf_token %}
+		<div>
+          <label for="name">Слово:</label>
+          <input type="text" name="word" required>
+        </div>
+        <div>
+           <label for="name">Перевод:</label>
+           <input type="text" name="transl" required>
+        </div>
+    
+    <div>
+      <label for="category">Часть речи:</label>
+     <select name="pos">
+        <option>Выберите часть речи</option>
+        <option value="0">Не определено</option> 
+        <option value="1">Существительное</option> 
+        <option value="2">Прилагательное</option> 
+        <option value="3">Глагол</option> 
+        <option value="4">Наречие</option> 
+        <option value="5">Комбинированые</option> 
+        <option value="6">stative</option>
+        <option value="7">Местоимение</option> 
+        <option value="8">Числительное</option> 
+        <option value="9">Союз</option> 
+        <option value="10">Предлог</option> 
+        <option value="11">Функциональные</option> 
+        <option value="12">Имя собственное</option> 
+     </select> 
+      
+      <div class="select-arrow"></div> 
+    </div> 
+    <div>
+	    <label for="discription">Описание:</label>
+        <textarea rows="7" cols="45" name="descr"></textarea>
+    </div> 
+    <button type="submit">Сохранить</button>
+	</form>
+	     </div>	
+	
+	<div class="smallform">
+		<div class="title">
+			<h2>Добавление новых форм слов</h2>
+		</div>
+	<form method="post" action="/processpt"> {% csrf_token %}
+	    <div>
+          <label for="name">Слово в любой форме:</label>
+          <input type="text" name="wordpt" required>
+        </div>	
+       <div>
+          <label for="name">Начальная форма:</label>
+          <input type="text" name="init" required>
+        </div> 
+        <button type="submit">Сохранить</button>
+	</form>	
+	</div>
+</div>	
+</div>
+
+<footer>
+	<small>   Copyright Irina Pronina&Novikov Arman @2017</small>	
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+}
+  
+header {
+  background: #B0DDDD;
+  height: 60px; 
+  font-family: FontAwesome;
+}
+.main {
+  background: #F9F9F9;
+ }
+
+.main:after {  /* очистка потока, для блоков с float*/
+	content:"";
+	display:table;
+	clear:both
+	}
+
+footer {
+  background: #DCCEC8;
+  height: 35px;
+  }
+
+.enterence {    /* позиция формы входа*/
+	float: right;
+}
+
+.form-wrap {  /* позиция формы регистрации */
+	float: left;
+}
+.container {  /*адаптация для больших экранов*/
+  width: 100%;
+  max-width: 1200px; 
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+} 
+
+/* стили навигации по сайту */
+.link {
+	font-size: 17px;
+}
+nav ul {
+	list-style: none;  
+	padding: 0;
+    margin: 0;  
+}
+nav a {
+	text-decoration: none;
+	outline: none;
+	color: white;
+} 
+nav a:hover,
+nav a:focus {color: #695753;}
+
+.menu {
+	text-align: center;
+	background: #B0DDDD;
+	}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px; 
+}
+  
+.menu > li > a { 
+	display: block;
+	padding: 8px 20px;
+	}
+
+*{box-sizing:border-box} /* для всех элементов на странице, паддинги "внутрь" */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=cyrillic';
+.rusform {
+	float: right;
+}
+.form-wrap {
+  margin: 17px 17px 21px 17px;	
+  width: 550px;
+  background: #ee4b72;
+  border-radius: 0px;
+}
+.enterence {
+  margin: 17px 17px 21px 17px;
+  width: 550px;
+  background: #ee4b72;
+  border-radius: 0px;
+  height: 406px;
+}
+
+.form-wrap *{transition: .1s linear}
+.profile {
+  width: 240px;
+  float: left;
+  text-align: center;
+  padding: 30px;
+}
+form {
+  background: white;
+  float: left;
+  width: calc(100% - 240px);
+  height: 100%;
+  padding: 30px;
+  border-radius: 0px;
+  color: #7b7b7b; 
+}
+
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  color: white;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+}
+p{margin-top: 0}
+.title {
+	padding: 10px 0px 0px 10px;
+    margin-top: 0px;
+}
+/*h2:after {
+  content: "\f138";
+  font-size: 100px;
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}*/
+
+label, span {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-width: 0;
+  background: #e6e6e6;
+  outline: none;
+  margin: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus { /* рамка при клике */
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+
+button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #B0DDDD;
+  color: white;
+  font-size: 17px;
+  font-family: fontAwesome;
+  outline: none;
+}
+/* @media (max-width: 600px) {
+  body {display: block}
+  .form-wrap {margin: 20px auto; max-width: 550px; width:100%}
+  .profile, form {float: none; width: 100%}
+  h1 {margin-top: auto; padding-bottom: 50px;}
+  form {border-radius: 0 0 20px 20px}
+}*/
+
+.smallform {
+	float: right;
+	}
+
+.bigform > form {
+  background: white;
+  width: 400px;
+  height: 100%;
+  padding: 30px;
+  border-radius: 0px;
+  color: #7b7b7b; 
+  margin: 0px 0px 15px 25px;
+  }
+  
+.engform > form {
+  background: white;
+  width: 400px;
+  height: 100%;
+  padding: 30px;
+  border-radius: 0px;
+  color: #7b7b7b; 
+  margin: 0px 0px 15px 25px;
+  }
+.rusform > form {
+  background: white;
+  width: 400px;
+  height: 100%;
+  padding: 30px;
+  border-radius: 0px;
+  color: #7b7b7b; 
+  margin: 0px 0px 15px 25px;
+  }
+
+
+.smallform > form {
+  background: white;
+  width: 400px;
+  height: 100%;
+  margin-right: 25px;
+  border-radius: 0px;
+  color: #7b7b7b; 
+}
+
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+  -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+}
+
+select::-ms-expand {
+  display: none; /*убираем галочку в IE*/
+}
+
+.select-arrow { /*стили для стрелки*/
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}

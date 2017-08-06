@@ -1,0 +1,12 @@
+=
+%dog%
+*sobaka*
+^1^
++dog is usually a friend of humans+
+
+=
+%doggy%
+*like a dog*
+^2^
++adjective means smth like a dog+
+

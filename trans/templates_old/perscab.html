@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+
+<body>
+<header>
+  <div class="container">
+	  <a href="index.html" class="logo">ЛОГО</a> 
+ <nav>
+<ul class="menu">
+     <li><a href="index.html"><span class="link">Главная</span></a></li>
+     <li><a href="translator.html"><span class="link">Переводчик</span></a></li>
+     <li><a href="contacts.html"><span class="link">Контакты</span></a></li>
+     <li><a href="register.html"><span class="link">Вход/Регистрация</span></a></li>
+     <li><a href="#"><span class="link">Выйти</span></a></li>    
+</ul>
+</nav> 
+</div>  
+</header>
+
+<div class="main">
+<div class="container">
+		<div class="bigform"> 
+			<legend>Добавление новых слов</legend>
+	<form>
+		<div>
+          <label for="name">Слово:</label>
+          <input type="text" required name="name" required>
+        </div>
+        <div>
+           <label for="name">Перевод:</label>
+           <input type="text" required name="name" required>
+        </div>
+    
+    <div>
+      <label for="category">Часть речи:</label>
+     <select name="category">
+        <option>Выберите часть речи</option>
+        <option value="undefined">Не определено</option> 
+        <option value="noun">Существительное</option> 
+        <option value="adjective">Прилагательное</option> 
+        <option value="verb">Глагол</option> 
+        <option value="adverb">Наречие</option> 
+        <option value="hybro">Комбинированые</option> 
+        <option value="stative">stative</option>
+        <option value="pronoun">Местоимение</option> 
+        <option value="numeral">Числительное</option> 
+        <option value="conjunctions">Союз</option> 
+        <option value="prepositions">Предлог</option> 
+        <option value="functional">Функциональные</option> 
+        <option value="name">Имя собственное</option> 
+     </select> 
+      
+      <div class="select-arrow"></div> 
+    </div> 
+    <div>
+	    <label for="discription">Описание:</label>
+        <textarea rows="7" cols="45" name="message"></textarea>
+    </div> 
+    <button type="submit">Сохранить</button>
+	</form>
+	     </div>	
+	
+	<div class="smallform">
+		<legend>Добавление новых форма слова</legend>
+	<form >
+	    <div>
+          <label for="name">Слово в любой форме:</label>
+          <input type="text" required name="name" required>
+        </div>	
+       <div>
+          <label for="name">Начальная форма:</label>
+          <input type="text" required name="name" required>
+        </div> 
+        <button type="submit">Сохранить</button>
+	</form>	
+	</div>
+</div>	
+</div>
+
+<footer>
+	<small>   Copyright Irina Pronina&Novikov Arman @2017</small>	
+</footer>
+
+</body>
+</html>

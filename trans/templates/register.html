@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OnTrans</title>	
+<meta charset="utf-8" /> 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>	
+</head>
+
+<body>
+<header>
+  <div class="container">
+	  <a href="index.html" class="logo">ЛОГО</a> 
+ <nav>
+<ul class="menu">
+     <li><a href="/about"><span class="link">О нас</span></a></li>
+     <li><a href="/"><span class="link">Переводчик</span></a></li>
+     <li><a href="/twork"><span class="link">Работа с текстом</span></a></li>
+     <li><a href="/contacts"><span class="link">Контакты</span></a></li>
+     <li><a href="/reglog"><span class="link">Вход/Регистрация</span></a></li>
+</ul>
+</nav> 
+</div>  
+</header>
+
+<div class="main">
+	<div class="container">
+     <div class="form-wrap">
+         <div class="profile"><img src="{% static 'profile-image.png' %}">
+             <h1>Регистрация</h1>
+         </div>
+     <form method="post" action="/register/"> {% csrf_token %}
+      <!--
+     <div>
+         <label for="name">Имя:</label>
+         <input type="text" required name="name" required>
+      </div>
+      <div>
+          <label for="email">E-mail:</label>
+          <input type="email" required name="email" required>
+        </div>
+      <div>
+         <label for="password1">Пароль:</label>
+          <input type="text" required name="name" required>
+       </div>
+       <div>
+         <label for="password1">Пароль еще раз:</label>
+          <input type="text" required name="name" required>
+       </div>
+       -->
+      {{ form.as_table }}
+
+     <button type="submit">Отправить</button> 
+     </form> 
+     </div>
+
+         {% if error %}
+         <h2>Такой пользователь не зарегистрирован</h2>
+         {% endif %}
+
+    <div class="enterence">
+         <div class="profile"><img src="{% static 'profile-image.png' %}">
+           <h1>Вход</h1>
+         </div>
+      <form method="post" action="/perscab"> {% csrf_token %}
+
+         <div>
+             <label for="name">Имя:</label>
+             <input type="text" name="username1" required>
+         </div>
+         <div>
+             <label for="password">Пароль:</label>
+             <input type="text" name="password" required>
+         </div>
+    
+         <button type="submit">Войти</button> 
+        </form> 
+     </div>
+ </div>
+</div>
+</body>
+
+<footer>
+	<small>   Copyright Irina Pronina & Novikov Arman @2017</small>	
+</footer>
+
+</html>

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1494236784 source:/home/arman/cbp/preftree/main.cpp
+	"preftree.h"
+
+1494237236 /home/arman/cbp/preftree/preftree.h
+	<iostream>
+	<fstream>
+	<sys/types.h>
+	<dirent.h>
+	<unistd.h>
+
+1494637638 source:/home/arman/KRPR/preftree/preftree.cpp
+	"preftree.h"
+
+1494238305 /home/arman/KRPR/preftree/preftree.h
+	<iostream>
+	<fstream>
+	<sys/types.h>
+	<dirent.h>
+
+1494238834 source:/home/arman/KRPR/preftree/main.cpp
+	"preftree.h"
+
